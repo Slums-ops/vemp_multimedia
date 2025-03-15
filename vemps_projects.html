@@ -10,14 +10,46 @@
         header img { height: 50px; margin-right: 8px; }
         header h1 { margin: 0; font-size: 1.4em; }
         header p { width: 100%; margin-top: 2px; font-size: 0.85em; }
-        nav { background: #136b63; padding: 6px; text-align: center; width: 100%; }
+        nav {
+    background: #136b63;
+    padding: 6px;
+    text-align: center;
+    width: flex;
+}
         nav a { color: #fff; text-decoration: none; padding: 6px 12px; display: inline-block; transition: color 0.3s ease; }
         nav a:hover, nav a:visited { color: #F4F9C3; }
-        .menu-icon { display: none; font-size: 25px; cursor: pointer; color: white; position: fixed; top: 10px; left: 10px; z-index: 1100; background: #136b63; padding: 10px; border-radius: 5px; }
-        .menu-dropdown { display: none; position: fixed; top: 50px; left: 10px; background: #136b63; padding: 10px; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0,0,0,0.2); }
+        .menu-icon {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    background: #313f2c;
+    padding: 10px;
+    border-radius: 5px;
+}
+        .menu-dropdown {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background: #313f2c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
         .menu-dropdown a { display: block; color: white; text-decoration: none; padding: 8px 12px; }
         .menu-dropdown a:hover { background: #0f4a45; }
-        .container, .services, .projects, .contact { padding: 20px; text-align: justify; max-width: 850px; margin: auto; margin-top: 20px; }
+        .container, .services, .projects, .contact {
+    padding: 20px;
+    text-align: left;
+    max-width: 850px;
+    margin: auto;
+    margin-top: 20px;
+}
         .services, .projects, .contact { background: #136b63; color: #fff; margin: 10px auto; border-radius: 8px; padding: 20px; }
         .services h2, .projects h2, .contact h2 { text-align: center; margin-top: 5px; }
         .section-img { width: 70%; max-width: 500px; display: block; margin: 10px auto; border-radius: 8px; border: 3px solid #F4F9C3; padding: 3px; }
@@ -53,13 +85,13 @@
     <div class="menu-dropdown">
         <a href="index.html">About</a>
         <a href="vemps_services.html">Services</a>
-        <a href="contact.html">Contact</a>
+        <a href="vemps_contact.html">Contact</a>
     </div>
     <nav>
         <a href="index.html">About</a>
         <a href="vemps_services.html">Services</a>
         <a href="#">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="vemps_contact.html">Contact</a>
     </nav>
     <div class="container" id="about">
         <h2>NOTABLE PROJECTS & ACHIEVEMENTS</h2>
@@ -113,9 +145,9 @@
 <div class="projects" id="events">
       <h2>Corporate & Private Sector</h2>
   <img src="image/6mile_rooster.jpg" alt="Projects Image" class="section-img">
-        <p><li>Gold Spot Cordial TV Commercial – Pacific Industries (2006)</li></p><p></p>
+        <ul><li>Gold Spot Cordial TV Commercial – Pacific Industries (2006)</li><p></p>
 <li>Ela Motors Badili Hino Truck Shop Grand Opening (2013)</li><p></p>
-<li>Game Fishing Association PNG 41st National Titles (2016)</li><p></p>
+			<li>Game Fishing Association PNG 41st National Titles (2016)</li></ul>
     </div>
 
 <div class="projects" id="nbc">
