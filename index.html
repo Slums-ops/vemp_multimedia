@@ -7,8 +7,15 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #000; }
         header { background: #313f2c; color: #fff; padding: 12px; text-align: center; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
-        header img { height: 50px; margin-right: 8px; }
-        header h1 { margin: 0; font-size: 1.4em; }
+        header img {
+    height: 70px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+        header h1 {
+    margin: 0;
+    font-size: 1.3em;
+}
         header p { width: 100%; margin-top: 2px; font-size: 0.85em; }
         nav {
     background: #136b63;
@@ -43,10 +50,31 @@
 }
         .menu-dropdown a { display: block; color: white; text-decoration: none; padding: 8px 12px; }
         .menu-dropdown a:hover { background: #0f4a45; }
-        .container, .services, .projects, .contact { padding: 20px; text-align: justify; max-width: 850px; margin: auto; margin-top: 20px; }
+        .container, .services, .projects, .contact {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    max-width: 850px;
+    margin: auto;
+    margin-top: 5px;
+}
+		.container h2 {
+			font-size: 1.25em;
+			text-align: center;
+		}
         .services, .projects, .contact { background: #136b63; color: #fff; margin: 10px auto; border-radius: 8px; padding: 20px; }
         .services h2, .projects h2, .contact h2 { text-align: center; margin-top: 5px; }
-        .section-img { width: 70%; max-width: 500px; display: block; margin: 10px auto; border-radius: 8px; border: 3px solid #F4F9C3; padding: 3px; }
+        .section-img {
+    width: 95%;
+    max-width: 504px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 3px solid #F4F9C3;
+    padding: 3px;
+}
         footer { background: #1c2918; color: #fff; text-align: center; padding: 12px; margin-top: 10px; }
         .social-icons { margin-top: 10px; }
         .social-icons a { display: inline-block; margin: 0 10px; }
@@ -85,23 +113,21 @@
         <a href="#">About</a>
         <a href="vemps_services.html">Services</a>
         <a href="vemps_projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="vemps_contact.html">Contact</a>
     </nav>
     <div class="container" id="about">
         <h2>ABOUT US</h2>
-        <img src="image/kavieng_fisheries.jpg" alt="About Us Image" class="section-img">
+        <img src="image/mooney_night01.jpg" alt="About Us Image" class="section-img">
         <p>VideoElite Multimedia Production (VEMP) is a premier media production company in Papua New Guinea. Established in 2006, we specialize in high-quality multimedia content that informs, engages, and inspires audiences.</p>
     </div>
     <div class="services" id="services">
         <h2>OUR VISION</h2>
         <img src="image/vempstudio.jpg" alt="Services Image" class="section-img">
-        <blockquote>
-          <p>Strive for quality and innovation in visual storytelling.</p>
-        </blockquote>
+        <p>Strive for quality and innovation in visual storytelling.</p>        
     </div>
 <div class="projects" id="projects">
         <h2>OUR MISSION</h2>
-        <img src="image/kalmat_kids.jpg" alt="Projects Image" class="section-img">
+        <img src="image/canoe_sunset.jpg" alt="Projects Image" class="section-img">
         <p>To provide multimedia solutions that empower businesses, government agencies, and organizations to connect with their audiences effectively.</p>
     </div>
 <footer>

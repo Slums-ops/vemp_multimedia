@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEMP Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #181d17;
+    color: #FFFFFF;
+}
+        header { background: #313f2c; color: #fff; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; }
+        header img { width: 220px; height: auto; margin-right: 15px; }
+        nav { background: #136b63; padding: 10px; text-align: center; }
+        nav a { color: #fff; text-decoration: none; padding: 10px 20px; display: inline-block; transition: color 0.3s ease; }
+        nav a:hover { color: #F4F9C3; }
+        .container { max-width: 1200px; margin: auto; padding: 40px; text-align: center; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .video { background: #136b63; padding: 10px; border-radius: 10px; }
+        video { width: 100%; height: auto; border-radius: 10px; }
+		h2 {
+    color: #FFFFFF
+}
+        footer { background: #136b63; text-align: center; padding: 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/vemp_logo_220x88.png" alt="Company Logo">
+        <div>
+          <h1>VEMP Portfolio</h1>
+            <p>Watch our latest projects and productions</p>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Featured Videos</h2>
+        <div class="video-grid">
+            <div class="video">
+                <video controls>
+                    <source src="videos/ipdp_launching.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>INTEGRATED PROVINCIAL DEVELOPMENT PLAN – Milne Bay Provincial Government</p>
+            </div>
+            <div class="video">
+              <video controls>
+                    <source src="videos/apec-security.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>APEC Joint Security Task Force Awareness Campaign</p>
+            </div>
+            <div class="video">
+              <video controls>
+                    <source src="videos/telefomin-road.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Telefomin’s Vital Road Documentary</p>
+            </div>
+            <div class="video">
+              <video controls>
+                    <source src="videos/png-census.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>PNG National Census Awareness Documentary</p>
+            </div>
+      </div>
+    </div>
+<footer>
+        <p>&copy; 2025 VideoElite Multimedia Production. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
