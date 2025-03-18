@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoElite Multimedia Production</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #000; }
+        header { background: #313f2c; color: #fff; padding: 12px; text-align: center; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
+        header img {
+    height: 70px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+        header h1 {
+    margin: 0;
+    font-size: 1.3em;
+}
+        header p { width: 100%; margin-top: 2px; font-size: 0.85em; }
+        nav {
+    background: #136b63;
+    padding: 6px;
+    text-align: center;
+    width: flex;
+}
+        nav a { color: #fff; text-decoration: none; padding: 6px 12px; display: inline-block; transition: color 0.3s ease; }
+        nav a:hover, nav a:visited { color: #F4F9C3; }
+        .menu-icon {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    background: #313f2c;
+    padding: 10px;
+    border-radius: 5px;
+}
+        .menu-dropdown {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background: #313f2c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+        .menu-dropdown a { display: block; color: white; text-decoration: none; padding: 8px 12px; }
+        .menu-dropdown a:hover { background: #0f4a45; }
+        .container, .services, .projects, .contact, .engagement-form {
+    padding: 20px;
+    text-align: justify;
+    max-width: 850px;
+    margin: auto;
+    margin-top: 10px;
+}
+        .services, .projects, .contact, .engagement-form { background: #136b63; color: #fff; margin: 10px auto; border-radius: 8px; padding: 20px; }
+        .services h2, .projects h2, .contact h2, .engagement-form h2 { text-align: center; margin-top: 5px; }
+        .section-img { width: 70%; max-width: 500px; display: block; margin: 10px auto; border-radius: 8px; border: 3px solid #F4F9C3; padding: 3px; }
+        footer {
+    background: #1c2918;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+        .form-container { max-width: 600px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.2); margin: auto; color: #000; }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #136b63; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; display: block; width: 100%; margin-top: 15px; }
+        button:hover { background: #0f4a45; }
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            var menuIcon = document.querySelector('.menu-icon');
+            if (window.scrollY > 100) {
+                menuIcon.style.display = 'block';
+            } else {
+                menuIcon.style.display = 'none';
+            }
+        });
+        function toggleMenu() {
+            var dropdown = document.querySelector(".menu-dropdown");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="image/vemp_logo.png" alt="Company Logo">
+        <div>
+            <h1>VideoElite Multimedia Production</h1>
+            <p>Bringing Stories to Life Through Multimedia Excellence</p>
+        </div>
+    </header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-dropdown">
+        <a href="vemps_services.html">Services</a>
+        <a href="vemps_projects.html">Projects</a>
+        <a href="vemps_contact.html">Contact</a>
+    </div>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="vemps_services.html">Services</a>
+        <a href="vemps_projects.html">Projects</a>
+        <a href="vemps_contact.html">Contact</a>
+    </nav>
+    <div class="engagement-form">
+        <h2>Engagement Form</h2>
+        <div class="form-container">
+            <form action="mailto:vempstudio@gmail.com" method="post" enctype="text/plain">
+                <label for="client">Client</label>
+                <input type="text" id="client" name="client" required>
+                <label for="contact-person">Contact Person</label>
+                <input type="text" id="contact-person" name="contact-person" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="category">Job Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="Video Production">Video Production</option>
+                    <option value="Digital Media & Content Creation">Digital Media & Content Creation</option>
+                    <option value="Communication & Public Relations">Communication & Public Relations</option>
+                    <option value="Event Management & Live Broadcasting">Event Management & Live Broadcasting</option>
+                </select>
+                <label for="scope">Scope of Work (Start & End Date)</label>
+                <textarea id="scope" name="scope" rows="4" required></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 VideoElite Multimedia Production. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
