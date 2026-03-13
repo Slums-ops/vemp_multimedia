@@ -117,7 +117,8 @@
         .social-icons a { display: inline-block; margin: 0 10px; }
         .social-icons img { width: 30px; height: 30px; }
     </style>
-    <script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+<script>
         window.addEventListener('scroll', function() {
             var menuIcon = document.querySelector('.menu-icon');
             if (window.scrollY > 100) {
@@ -140,6 +141,7 @@
             <p>Bringing Stories to Life Through Multimedia Excellence</p>
         </div>
     </header>
+	
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="menu-dropdown">
         <a href="vemps_services.html">Services</a>
@@ -152,6 +154,39 @@
         <a href="vemps_projects.html">Projects</a>
         <a href="vemps_contact.html">Contact</a>
     </nav>
+	
+	<section class="hero">
+
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="showreel.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h3>Let’s Tell Your Story</h3>
+
+        <p>
+        Corporate • Documentary • Media Campaigns
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="engagement_form.html" class="btn-primary">
+                Request a Quote
+            </a>
+
+            <a href="showreel.mp4" class="btn-secondary">
+                View Full Reel
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+	
     <div class="container" id="about">
         
         <img src="image/about_us.jpg" alt="About Us Image" class="section-img">
