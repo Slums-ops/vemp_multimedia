@@ -10,22 +10,13 @@
     margin: 0;
     padding: 0;
     background-color: #fff;
-    color: #fff;
-    background-image: -webkit-linear-gradient(180deg,rgba(165,183,156,1.00) 0%,rgba(80,99,70,1.00) 27.77%,rgba(19,25,0,1.00) 89.64%);
-    background-image: -moz-linear-gradient(180deg,rgba(165,183,156,1.00) 0%,rgba(80,99,70,1.00) 27.77%,rgba(19,25,0,1.00) 89.64%);
-    background-image: -o-linear-gradient(180deg,rgba(165,183,156,1.00) 0%,rgba(80,99,70,1.00) 27.77%,rgba(19,25,0,1.00) 89.64%);
-    background-image: linear-gradient(270deg,rgba(165,183,156,1.00) 0%,rgba(80,99,70,1.00) 27.77%,rgba(19,25,0,1.00) 89.64%);
+    color: #000;
+    background-image: -webkit-linear-gradient(180deg,rgba(19,25,0,1.00) 0%,rgba(80,99,70,1.00) 30.88%,rgba(80,99,70,1.00) 72.54%,rgba(19,25,0,1.00) 100%);
+    background-image: -moz-linear-gradient(180deg,rgba(19,25,0,1.00) 0%,rgba(80,99,70,1.00) 30.88%,rgba(80,99,70,1.00) 72.54%,rgba(19,25,0,1.00) 100%);
+    background-image: -o-linear-gradient(180deg,rgba(19,25,0,1.00) 0%,rgba(80,99,70,1.00) 30.88%,rgba(80,99,70,1.00) 72.54%,rgba(19,25,0,1.00) 100%);
+    background-image: linear-gradient(270deg,rgba(19,25,0,1.00) 0%,rgba(80,99,70,1.00) 30.88%,rgba(80,99,70,1.00) 72.54%,rgba(19,25,0,1.00) 100%);
 }
-        header {
-    background: #1b2616;
-    color: #fff;
-    padding: 12px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        header { background: #313f2c; color: #fff; padding: 12px; text-align: center; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
         header img {
     height: 70px;
     margin-right: 8px;
@@ -86,27 +77,22 @@
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
-    text-align: left;
+    text-align: center;
     max-width: 850px;
     margin: auto;
     margin-top: 5px;
 }
-		.container h2 {
-			font-size: 1.25em;
-			text-align: center;
-		}
-        .services, .projects, .contact {
-    background: #1b2616;
-    color: #fff;
-    margin: 10px auto;
-    border-radius: 8px;
-    padding: 20px;
-}
+        .services, .projects, .contact { background: #136b63; color: #fff; margin: 10px auto; border-radius: 8px; padding: 20px; }
         .services h2, .projects h2, .contact h2 {
     text-align: center;
     margin-top: 5px;
     color: #f0f2c1;
 }
+		.services a, .projects a, .contact a {
+    color: #ffa91e;
+    text-decoration: none;
+		}
+		
         .section-img {
     width: 95%;
     max-width: 504px;
@@ -116,18 +102,23 @@
     border: 3px solid #ffa91e;
     padding: 3px;
 }
-
         footer {
     background: #1c2918;
     color: #ffa91e;
     text-align: center;
+    font-size: 12px;
     padding: 12px;
     margin-top: 10px;
-    font-size: 12px;
 }
         .social-icons { margin-top: 10px; }
         .social-icons a { display: inline-block; margin: 0 10px; }
         .social-icons img { width: 30px; height: 30px; }
+		
+		.team-member { margin-bottom: 40px; }
+        .team-member img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
+        .team-member h3 { margin: 10px 0 5px; font-size: 1.2em; }
+        .team-member p {    margin: 0;    font-size: 1em;    color: #FFA91E;
+}
     </style>
     <script>
         window.addEventListener('scroll', function() {
@@ -155,59 +146,43 @@
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="menu-dropdown">
         <a href="index.html">About</a>
+        <a href="vemps_services.html">Services</a>
         <a href="vemps_projects.html">Productions</a>
-        <a href="vemps_contact.html">Contact</a>
     </div>
     <nav>
         <a href="index.html">About</a>
-        <a href="#">Services</a>
+        <a href="vemps_services.html">Services</a>
         <a href="vemps_projects.html">Productions</a>
-        <a href="vemps_contact.html">Contact</a>
+        <a href="#">Contact</a>
     </nav>
     <div class="container" id="about">
-       
-        <img src="image/what_we_do.jpg" alt="About Us Image" class="section-img">
-        We craft compelling videos and brand content that bring your story to life. Your products and services are unique, and we present them with the care and creativity they deserve. When every element—concept, casting, direction, editing, visual effects, and music—comes together seamlessly, the result is something truly powerful.
-        <p></p>
-Through our work, we aim to contribute to Papua New Guinea’s development by strengthening communication and storytelling across all platforms.
+        
+        <img src="image/why_us.jpg" alt="About Us Image" class="section-img">
+        <p>Proven Track Record – Over 18 years of experience in delivering successful multimedia projects.</p>
     </div>
     <div class="services" id="services">
-        <h2>Video Production</h2>
-        <img src="image/kavieng_faces.jpg" alt="Services Image" class="section-img">
+        <h2>Let’s Create Something Great Together!</h2>
+        <img src="image/kiriwina_lokuia_lodge.jpg" alt="Services Image" class="section-img">
         <ul>
-          <li>Corporate Documentaries & Promotional Videos</li><p></p>
-          <li>Event Coverage & Live Streaming</li><p></p>
-          <li>Television Commercials & Public Awareness Campaigns</li><p></p>
-          <li>Training & Educational Videos</li>
-        </ul>
+          <li>vempstudio@gmail.com | +675 7606 2851</li><p></p>
+          <li>Budoa Avenue, East Boroko, Port Moresby, NCD, Papua New Guinea</li><p></p>
+		<li><a href="engagement_form.html">Click to Fill & Send us an Engagement Form</a></li>
+          </ul>
     </div>
-    <div class="projects" id="projects">
-        <h2>Digital Media & Content Creation</h2>
-        <img src="image/polam_paliks.jpg" alt="Projects Image" class="section-img">
-        <ul>
-          <li>Social Media Content & Management</li><p></p>
-          <li>Graphic Design & Infographics</li><p></p>
-          <li>Photography & Aerial Drone Footage</li>
-        </ul>
-    </div>
-    <div class="projects" id="comms">
-      <h2>Communications & Public Relations</h2>
-        <img src="image/southerncross_lukout.jpg" alt="Projects Image" class="section-img">
-        <ul>
-          <li>Strategic Communication Planning</li><p></p>
-          <li>Press Releases & Media Relations</li><p></p>
-          <li>Stakeholder Engagement & Community Awareness Campaigns</li>
-        </ul>
-<p></p>
-    </div>
-    <div class="projects" id="events">
-      <h2>Event Management & Live Broadcasting</h2>
-        <img src="image/kenu_kundu_festival.jpg" alt="Projects Image" class="section-img">
-        <ul>
-          <li>Conference & Workshop Coverage</li><p></p>
-          <li>Online Webinars & Virtual Events</li><p></p>
-          <li>Live Broadcast Production</li>
-        </ul>
+	
+	<div class="services" id="team-member">
+        <h2>Meet Our Management Team</h2>
+        <div class="team-member">
+            <img src="image/charleslagaia.png" alt="Charles Lagaia">
+            <h3>Charles Lagaia</h3>
+            <p>Director</p>
+      </div>
+	<div class="team-member">
+            <img src="image/doreen.jpg" alt="Charles Lagaia">
+            <h3>Doreen Lagaia</h3>
+            <p>Director</p>
+      </div>
+		
     </div>
 	
 <footer>
